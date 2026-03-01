@@ -1,6 +1,7 @@
 include:
   - db.yaml
   - admin.yaml
+
 services:
   fsapp:
     image: prawee/strapi:latest
@@ -12,7 +13,16 @@ services:
       DATABASE_NAME: ${APP_NAME}
       DATABASE_USERNAME: ${APP_USER}
       DATABASE_PASSWORD: ${APP_PASSWORD}
-    ports:
-      - ${APP_PORT}:1337
     depends_on:
       - fsdb
+
+  proxy:
+    image: caddy:latest
+    container_name: Fivestar-proxy
+    ports:
+      - "80:80"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+    depends_on:
+      - fsapp
+      - fsadmin
