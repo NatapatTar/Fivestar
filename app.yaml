@@ -1,7 +1,5 @@
 services:
-    
-
-fsapp:
+  fsapp:
     image: prawee/strapi:latest
     container_name: Fivestar-app
     environment:
