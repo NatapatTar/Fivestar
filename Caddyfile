@@ -1,0 +1,7 @@
+app.fivestar.local:80 {
+    reverse_proxy fsapp:1337
+}
+
+admin.fivestar.local:80 {
+    reverse_proxy fsadmin:80
+}
