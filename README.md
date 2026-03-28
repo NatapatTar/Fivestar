@@ -2,9 +2,17 @@
 
 ## Member
 - s670204151179 Natapat Ngernhoy s6702041511179@email.kmutnb.ac.th
-- s670204151039 Suphaporn Toomtong s6702041511039@email.kmutnb.ac.th
+- s6702041511039 Suphaporn Toomthong s6702041511039@email.kmutnb.ac.th
+- s6702041511187 Kittithat Pansoke s6702041511187@email.kmutnb.ac.th
+- s6702041511241 Thanapat Ritdet s6702041511241@email.kmutnb.ac.th
+- s6702041511268 Narapat Thitichunhakun s6702041511268@email.kmutnb.ac.th
+
 
 ## Enviroment
 ```sh
 cp env.simple .env
 ```
+
+## Running services
+- docker compose up # monitoring
+- docker compose up -d # background
