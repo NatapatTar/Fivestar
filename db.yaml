@@ -1,7 +1,7 @@
 services:
   fsdb:
     image: postgres:latest
-    container_name: Fivestar-database
+    container_name: 68_s3_Fivestar_database
     environment:
       POSTGRES_USER: ${DATABASE_USER}
       POSTGRES_PASSWORD: ${DATABASE_PASSWORD}

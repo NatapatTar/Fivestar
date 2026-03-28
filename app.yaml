@@ -1,7 +1,7 @@
 services:
   fsapp:
     image: prawee/strapi:latest
-    container_name: Fivestar-app
+    container_name: 68_s3_Fivestar_app
     environment:
       DATABASE_CLIENT: ${APP_CLIENT}
       DATABASE_HOST: ${APP_HOST}

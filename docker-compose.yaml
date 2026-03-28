@@ -18,9 +18,9 @@ services:
 
   proxy:
     image: caddy:latest
-    container_name: Fivestar-proxy
+    container_name: 68_s3_Fivestar_proxy
     ports:
-      - "80:80"
+      - "99:99"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
     depends_on:
